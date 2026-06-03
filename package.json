@@ -1,0 +1,15 @@
+{
+  "name": "troop-157-website",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check:js": "node --check scripts/main.js"
+  },
+  "devDependencies": {
+    "vite": "^7.2.6"
+  }
+}
+
