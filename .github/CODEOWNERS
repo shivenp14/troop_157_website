@@ -1,0 +1,3 @@
+# Require the project lead to review changes when GitHub branch protection
+# has "Require review from Code Owners" enabled.
+* @shivenp14

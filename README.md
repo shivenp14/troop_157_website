@@ -121,3 +121,19 @@ Keep JavaScript changes small and easy to explain.
 ## Future Admin Page Note
 
 There is no admin page in the starter site right now. A real admin page should be added later only after the team chooses a safe login, permissions, and data storage approach.
+
+## Contribution And Review Plan
+
+The `main` branch should be protected in GitHub before scouts start contributing.
+
+Recommended GitHub settings:
+
+- Require a pull request before merging.
+- Require at least 2 approving reviews.
+- Require review from code owners.
+- Dismiss stale approvals when new commits are pushed.
+- Require conversation resolution before merging.
+- Block force pushes.
+- Block branch deletion.
+
+The repository includes `.github/CODEOWNERS` with `@shivenp14` as the code owner. Once code-owner review is required in GitHub, pull requests should need review from the project lead plus at least one additional approval.
