@@ -6,10 +6,10 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "check:js": "node --check scripts/main.js"
+    "check": "npm run check:js && npm run build",
+    "check:js": "node --check scripts/main.js && node --check scripts/content.js && node --check scripts/content-list.js"
   },
   "devDependencies": {
     "vite": "^7.2.6"
   }
 }
-

@@ -8,7 +8,7 @@ export default defineConfig({
         main: resolve(__dirname, "index.html"),
         events: resolve(__dirname, "events.html"),
         announcements: resolve(__dirname, "announcements.html"),
-        contact: resolve(__dirname, "contact.html")
+        contact: resolve(__dirname, "contact.html"),
       }
     }
   }

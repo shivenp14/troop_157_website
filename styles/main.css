@@ -1,3 +1,4 @@
+/* 1. Colors and reusable values */
 :root {
   --color-bg: #f7f8f3;
   --color-surface: #ffffff;
@@ -10,6 +11,7 @@
   --shadow-soft: 0 10px 30px rgba(31, 41, 51, 0.08);
 }
 
+/* 2. Basic page styles */
 * {
   box-sizing: border-box;
 }
@@ -31,6 +33,26 @@ a:hover {
   color: var(--color-green);
 }
 
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--color-gold);
+  outline-offset: 3px;
+}
+
+.skip-link {
+  position: fixed;
+  left: 1rem;
+  top: -5rem;
+  z-index: 20;
+  background: var(--color-surface);
+  padding: 0.75rem 1rem;
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
+/* 3. Header and navigation */
 .site-header {
   display: flex;
   align-items: center;
@@ -81,6 +103,7 @@ a:hover {
   padding: 0.45rem 0.7rem;
 }
 
+/* 4. Shared page layout */
 .page-hero,
 .content-section {
   max-width: 960px;
@@ -130,6 +153,7 @@ a:hover {
   margin-bottom: 2rem;
 }
 
+/* 5. Cards and content lists */
 .card-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -158,6 +182,7 @@ a:hover {
   gap: 1rem;
 }
 
+/* 6. Events calendar */
 .calendar-grid {
   display: grid;
   grid-template-columns: repeat(7, minmax(0, 1fr));
@@ -201,6 +226,7 @@ a:hover {
   margin: 0 0 0.25rem;
 }
 
+/* 7. Buttons */
 .button-link {
   display: inline-block;
   background: var(--color-green);
@@ -219,12 +245,14 @@ a:hover {
   color: #ffffff;
 }
 
+/* 8. Other shared components */
 .two-column {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
 }
 
+/* 9. Footer */
 .site-footer {
   background: var(--color-blue);
   color: #ffffff;
@@ -237,6 +265,7 @@ a:hover {
   margin: 0.25rem 0;
 }
 
+/* 10. Phone and tablet layout */
 @media (max-width: 760px) {
   .site-header {
     align-items: stretch;

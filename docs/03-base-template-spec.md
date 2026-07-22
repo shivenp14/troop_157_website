@@ -18,9 +18,12 @@ troop_157_website/
   announcements.html
   package.json
   vite.config.mjs
+  CONTRIBUTING.md
   styles/
     main.css
   scripts/
+    content.js
+    content-list.js
     main.js
   assets/
     images/
@@ -35,7 +38,8 @@ This structure keeps the site easy for beginners:
 
 - Each major page has one HTML file.
 - All styling lives in one CSS file.
-- Basic behavior lives in one JavaScript file.
+- Routine event and announcement updates live in `scripts/content.js`.
+- Shared behavior is split into small JavaScript files by purpose.
 - npm and Vite provide the local dev server and build commands.
 - Images and documents are separated from code.
 - Planning documents stay in `docs/`.
