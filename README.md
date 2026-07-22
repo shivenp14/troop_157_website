@@ -1,139 +1,96 @@
-# Troop 157 Website Starter
+# Troop 157 Website
 
-This repository contains the starter template for the Troop 157 website project.
+This is a small website that scouts can build together. It uses plain HTML,
+CSS, and JavaScript so each part can be learned separately.
 
-The site is currently a placeholder. It has the basic page structure, navigation, styling, JavaScript hooks, and planning documents that the scout team will build from. Most page text is intentionally placeholder text because scouts will write and replace the content through their assigned tasks.
+## Start Here
 
-## Current Status
+You need [Node.js](https://nodejs.org/) installed on your computer. Ask an
+adult or project leader for help if it is not installed.
 
-The current version includes:
+1. Open this folder in a code editor.
+2. Open the editor's terminal.
+3. Install the project tools (only needed the first time):
 
-- A homepage placeholder.
-- An events page with an upcoming-events area and a static calendar placeholder.
-- An announcements page placeholder.
-- A contact page placeholder.
-- Basic responsive styling.
-- Simple JavaScript for the mobile menu, footer year, and future event/announcement data.
-- Planning documents in `docs/`.
+   ```bash
+   npm install
+   ```
 
-The current version does not include:
+4. Start the website:
 
-- Final troop content.
-- Real event data.
-- Real announcements.
-- Approved photos.
-- A real admin page.
-- Authentication or database storage.
+   ```bash
+   npm run dev
+   ```
 
-## What Will Be Built Next
+5. Hold `Command` (Mac) or `Ctrl` (Windows), then click the local link shown
+   in the terminal. It is usually `http://localhost:5173`.
+6. Press `Ctrl+C` in the terminal when you are finished.
 
-The scout team will work on:
+If setup does not work, copy the terminal's error message and show it to the
+project leader. Error messages are clues; you have not broken the project.
 
-- Replacing placeholder homepage content.
-- Writing public-safe event descriptions.
-- Filling in announcements.
-- Creating approved contact instructions.
-- Testing the site on desktop and mobile.
-- Reviewing all content for safety and privacy.
-- Planning a future admin/authentication system after the public MVP is working.
+## Where Do I Make Changes?
 
-## Tech Stack
+| What you want to change | File to open |
+| --- | --- |
+| Home page words | `index.html` |
+| Events page words | `events.html` |
+| Announcements page words | `announcements.html` |
+| Contact page words | `contact.html` |
+| Events and announcements shown by JavaScript | `scripts/content.js` |
+| Colors, spacing, and layout | `styles/main.css` |
+| Menu or list behavior | `scripts/main.js` or `scripts/content-list.js` |
 
-- HTML for page structure.
-- CSS for styling.
-- JavaScript for simple page behavior.
-- npm for project commands.
-- Vite for the local dev server and production build.
-- No framework.
+Most scouts should start with an HTML page or `scripts/content.js`. Ask the
+project leader before changing shared styles or behavior because those changes
+can affect every page.
 
-Scouts can edit the site with a normal text editor. Vite lets them test changes locally with auto-refresh.
-
-## First-Time Setup
-
-Run this once after downloading or cloning the project:
-
-```bash
-npm install
-```
-
-## Testing The Website
-
-Start the local dev server:
-
-```bash
-npm run dev
-```
-
-Then open the URL shown in the terminal. It is usually:
+## Project Map
 
 ```text
-http://localhost:5173
+troop_157_website/
+├── index.html                 Home page
+├── events.html                Events page
+├── announcements.html         Announcements page
+├── contact.html               Contact page
+├── assets/                    Approved images and documents
+├── scripts/
+│   ├── content.js             Easy-to-edit site updates
+│   ├── content-list.js        Builds event and announcement cards
+│   └── main.js                Starts shared page features
+├── styles/
+│   └── main.css               Styles shared by every page
+├── docs/                      Project plans
+├── CONTRIBUTING.md            Safe editing and review steps
+└── package.json               Project commands
 ```
 
-Stop the dev server with `Ctrl+C`.
+## Before You Share Your Work
+
+Run this command:
+
+```bash
+npm run check
+```
+
+It checks the JavaScript and makes a production copy of the website. A passing
+check ends with `built` and no red error message.
 
 ## Useful Commands
 
-```bash
-npm run dev
-npm run build
-npm run preview
-npm run check:js
-```
+- `npm run dev` starts the editable website.
+- `npm run check` checks all code and builds the site.
+- `npm run build` creates the production `dist/` folder.
+- `npm run preview` previews the production build.
 
-- `npm run dev`: start the local Vite dev server.
-- `npm run build`: create the production-ready `dist/` folder.
-- `npm run preview`: test the production build locally.
-- `npm run check:js`: check the JavaScript file for syntax errors.
+## Safety Rules
 
-## Files
+- Do not publish a scout's last name, personal email, phone number, home
+  address, school, or private event location.
+- Use only photos and documents approved for public use.
+- Give every image useful `alt` text that describes what is visible.
+- Get peer, project-lead, and adult review before publishing.
 
-- `index.html`: homepage template.
-- `events.html`: events page template.
-- `announcements.html`: announcements page template.
-- `contact.html`: contact page template.
-- `styles/main.css`: shared styling.
-- `scripts/main.js`: shared JavaScript.
-- `vite.config.mjs`: Vite build settings for all HTML pages.
-- `package.json`: npm scripts and project dependencies.
-- `assets/images/`: approved images go here.
-- `assets/documents/`: approved documents go here.
-- `docs/`: project planning documents.
-
-## JavaScript
-
-The starter JavaScript currently handles:
-
-- Mobile menu open/close.
-- Current year in the footer.
-- Empty event and announcement lists that scouts can fill later.
-
-Keep JavaScript changes small and easy to explain.
-
-## Scout Editing Rules
-
-- Replace placeholder text only after the task is assigned.
-- Do not publish youth last names, personal emails, phone numbers, home addresses, or school information.
-- Use only approved photos.
-- Give every image useful `alt` text.
-- Ask the project lead before changing navigation, CSS, or JavaScript.
-
-## Future Admin Page Note
-
-There is no admin page in the starter site right now. A real admin page should be added later only after the team chooses a safe login, permissions, and data storage approach.
-
-## Contribution And Review Plan
-
-The `main` branch should be protected in GitHub before scouts start contributing.
-
-Recommended GitHub settings:
-
-- Require a pull request before merging.
-- Require at least 2 approving reviews.
-- Require review from code owners.
-- Dismiss stale approvals when new commits are pushed.
-- Require conversation resolution before merging.
-- Block force pushes.
-- Block branch deletion.
-
-The repository includes `.github/CODEOWNERS` with `@shivenp14` as the code owner. Once code-owner review is required in GitHub, pull requests should need review from the project lead plus at least one additional approval.
+The current site intentionally contains placeholders. Replace a placeholder
+only when approved content is ready. A secure admin system is a later project;
+never put a password in these files.
