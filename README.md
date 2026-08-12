@@ -3,6 +3,10 @@
 This is a small website that scouts can build together. It uses plain HTML,
 CSS, and JavaScript so each part can be learned separately.
 
+## Team Workflow Guide
+
+Read the [Git branches, commands, task assignment, and learning resources guide](https://docs.google.com/document/d/1143kFEq-XCs4Jw5m1fIkOLPvGM9nk5rPW998a8cHBJU/edit?usp=sharing) before starting a task. It explains how to manage branches, use the project commands, handle assigned work, and find resources for learning.
+
 ## Start Here
 
 You need [Node.js](https://nodejs.org/) installed on your computer. Ask an
