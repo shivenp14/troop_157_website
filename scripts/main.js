@@ -37,12 +37,30 @@ function showCurrentYear() {
   });
 }
 
+function getComparableDateValue(item) {
+  if (!item || typeof item.dateValue !== "string") {
+    return Number.POSITIVE_INFINITY;
+  }
+
+  const parsedDate = Date.parse(item.dateValue);
+  return Number.isNaN(parsedDate) ? Number.POSITIVE_INFINITY : parsedDate;
+}
+
+function sortEventsByDateValue(items) {
+  return [...items].sort((left, right) => {
+    const leftDateValue = getComparableDateValue(left);
+    const rightDateValue = getComparableDateValue(right);
+
+    return leftDateValue - rightDateValue;
+  });
+}
+
 function startWebsite() {
   setupMobileMenu();
   markCurrentPage();
   showCurrentYear();
   renderContentList("announcements-list", announcements, "announcement-item");
-  renderContentList("events-list", events, "event-item");
+  renderContentList("events-list", sortEventsByDateValue(events), "event-item");
   renderAnnouncementPreview("home-announcement-preview", announcements);
 }
 
