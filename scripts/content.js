@@ -3,11 +3,11 @@
 // Never add private names, phone numbers, addresses, or meeting details.
 
 export const announcements = [
-  // {
-  //   date: "January 15, 2027",
-  //   title: "Example announcement",
-  //   message: "Add a short, adult-approved update here."
-  // }
+  {
+    date: "September 20, 2026",    
+    title: "Sunday Sales",
+    message: "We have our biweekly sales event this Sunday! Come by and get some bagels, donuts, Portugese rolls, or coffee."
+  }
 ];
 
 export const events = [
