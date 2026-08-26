@@ -5,13 +5,13 @@ function createContentCard(item, className) {
 
   const date = document.createElement("p");
   date.className = "item-date";
-  date.textContent = item.date || "DATE TO CONFIRM";
+  date.textContent = item.date || "By September 16, 2026";
 
   const title = document.createElement("h3");
-  title.textContent = item.title || "Title to confirm";
+  title.textContent = item.title || "Sunday Sales confirmation";
 
   const message = document.createElement("p");
-  message.textContent = item.message || "Adult-approved details will be added here.";
+  message.textContent = item.message || "Please rsvp to confirm your attendance at the sales event. We look forward to seeing you there!";
 
   card.append(date, title, message);
   return card;
