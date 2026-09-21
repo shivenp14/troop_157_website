@@ -13,6 +13,7 @@ export const announcements = [
 export const events = [
   // {
   //   date: "January 20, 2027",
+  //   dateValue: "2027-01-20",
   //   title: "Example event",
   //   message: "Add public, adult-approved event details here."
   // }
